@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "global.h": "c",
+        "stdint.h": "c",
+        "inode.h": "c",
+        "ide.h": "c",
+        "debug.h": "c",
+        "interrupt.h": "c",
+        "thread.h": "c",
+        "wait_exit.h": "c"
+    }
+}

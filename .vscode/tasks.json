@@ -1,0 +1,44 @@
+{
+    "tasks": [
+        {
+            "label": "make-all",
+            "command": "make",
+            "args": [
+                "-f",
+                "/home/steven/SKOS/src/makefile",
+            ],
+        },
+        {
+            "label": "run-bochs",
+            "command": "bochs-gdb",
+            "isBackground": true,
+            "args": [
+                "-q",
+                "-unlock",
+                "-f",
+                "/home/steven/SKOS/bochs/bochsrc.gdb"
+            ],
+            "dependsOn": "make-all",
+        },
+        {
+            "label": "make-clean",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "-f",
+                "/home/steven/SKOS/src/makefile",
+                "clean",
+            ],
+        },
+        {
+            "label": "kill-bochs",
+            "command": "bash",
+            "args": [
+                "-c",
+                "ps aux | grep bochs | grep -v 'grep' | awk '{print $2}' | xargs kill"
+            ],
+            //"dependsOn": "make-clean",
+        },
+    ],
+    "version": "2.0.0"
+}

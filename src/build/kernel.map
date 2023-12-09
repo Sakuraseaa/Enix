@@ -1,0 +1,1409 @@
+
+Merging program properties
+
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (0x1) and /home/steven/SKOS/src/build/kernel.o (not found)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (0x0) and /home/steven/SKOS/src/build/kernel.o (not found)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/debug.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/debug.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/memory.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/memory.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/bitmap.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/bitmap.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/string.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/string.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/thread.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/thread.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/list.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/list.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/sync.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/sync.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/console.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/console.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/keyboard.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/keyboard.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/ioqueue.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/ioqueue.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/tss.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/tss.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/process.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/process.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/syscall.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/syscall.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/syscall-init.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/syscall-init.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/stdio.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/stdio.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/stdio-kernel.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/stdio-kernel.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/ide.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/ide.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/fs.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/fs.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/dir.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/dir.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/file.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/file.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/inode.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/inode.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/fork.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/fork.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/shell.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/shell.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/assert.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/assert.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/buildin_cmd.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/buildin_cmd.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/exec.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/exec.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/wait_exit.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/wait_exit.o (0x0)
+Removed property 0xc0010001 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/pipe.o (0x1)
+Removed property 0xc0010002 to merge /home/steven/SKOS/src/build/main.o (not found) and /home/steven/SKOS/src/build/pipe.o (0x0)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/main.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/main.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/init.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/init.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/interrupt.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/interrupt.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/timer.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/timer.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/debug.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/debug.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/memory.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/memory.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/bitmap.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/bitmap.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/string.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/string.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/thread.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/thread.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/list.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/list.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/sync.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/sync.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/console.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/console.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/keyboard.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/keyboard.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/ioqueue.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/ioqueue.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/tss.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/tss.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/process.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/process.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/syscall.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/syscall.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/syscall-init.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/syscall-init.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/stdio.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/stdio.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/stdio-kernel.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/stdio-kernel.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/ide.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/ide.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/fs.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/fs.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/dir.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/dir.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/file.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/file.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/inode.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/inode.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/fork.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/fork.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/shell.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/shell.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/assert.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/assert.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/buildin_cmd.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/buildin_cmd.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/exec.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/exec.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/wait_exit.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/wait_exit.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/steven/SKOS/src/build/pipe.o
+ .note.gnu.property
+                0x00000000       0x28 /home/steven/SKOS/src/build/pipe.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0xc0001500
+LOAD /home/steven/SKOS/src/build/main.o
+LOAD /home/steven/SKOS/src/build/init.o
+LOAD /home/steven/SKOS/src/build/interrupt.o
+LOAD /home/steven/SKOS/src/build/timer.o
+LOAD /home/steven/SKOS/src/build/kernel.o
+LOAD /home/steven/SKOS/src/build/print.o
+LOAD /home/steven/SKOS/src/build/debug.o
+LOAD /home/steven/SKOS/src/build/memory.o
+LOAD /home/steven/SKOS/src/build/bitmap.o
+LOAD /home/steven/SKOS/src/build/string.o
+LOAD /home/steven/SKOS/src/build/thread.o
+LOAD /home/steven/SKOS/src/build/list.o
+LOAD /home/steven/SKOS/src/build/switch_to.o
+LOAD /home/steven/SKOS/src/build/sync.o
+LOAD /home/steven/SKOS/src/build/console.o
+LOAD /home/steven/SKOS/src/build/keyboard.o
+LOAD /home/steven/SKOS/src/build/ioqueue.o
+LOAD /home/steven/SKOS/src/build/tss.o
+LOAD /home/steven/SKOS/src/build/process.o
+LOAD /home/steven/SKOS/src/build/syscall.o
+LOAD /home/steven/SKOS/src/build/syscall-init.o
+LOAD /home/steven/SKOS/src/build/stdio.o
+LOAD /home/steven/SKOS/src/build/stdio-kernel.o
+LOAD /home/steven/SKOS/src/build/ide.o
+LOAD /home/steven/SKOS/src/build/fs.o
+LOAD /home/steven/SKOS/src/build/dir.o
+LOAD /home/steven/SKOS/src/build/file.o
+LOAD /home/steven/SKOS/src/build/inode.o
+LOAD /home/steven/SKOS/src/build/fork.o
+LOAD /home/steven/SKOS/src/build/shell.o
+LOAD /home/steven/SKOS/src/build/assert.o
+LOAD /home/steven/SKOS/src/build/buildin_cmd.o
+LOAD /home/steven/SKOS/src/build/exec.o
+LOAD /home/steven/SKOS/src/build/wait_exit.o
+LOAD /home/steven/SKOS/src/build/pipe.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x8048000))
+                0x080480d4                        . = (SEGMENT_START ("text-segment", 0x8048000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x080480d4        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x080480d4        0x0 /home/steven/SKOS/src/build/main.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+
+.rel.plt        0x080480d4        0x0
+ *(.rel.plt)
+                [!provide]                        PROVIDE (__rel_iplt_start = .)
+ *(.rel.iplt)
+ .rel.iplt      0x080480d4        0x0 /home/steven/SKOS/src/build/main.o
+                [!provide]                        PROVIDE (__rel_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+                0x08049000                        . = ALIGN (CONSTANT (MAXPAGESIZE))
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x08049000        0x0
+ *(.plt)
+ *(.iplt)
+ .iplt          0x08049000        0x0 /home/steven/SKOS/src/build/main.o
+
+.plt.got
+ *(.plt.got)
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0xc0001500     0xc828
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0xc0001500       0xa3 /home/steven/SKOS/src/build/main.o
+                0xc0001500                main
+                0xc0001540                init
+ .text          0xc00015a3       0x50 /home/steven/SKOS/src/build/init.o
+                0xc00015a3                init_all
+ .text          0xc00015f3      0x447 /home/steven/SKOS/src/build/interrupt.o
+                0xc000193e                intr_enable
+                0xc0001964                intr_disable
+                0xc000198a                intr_set_status
+                0xc00019a8                intr_get_status
+                0xc00019c5                register_handler
+                0xc00019e2                idt_init
+ .text          0xc0001a3a      0x4c5 /home/steven/SKOS/src/build/timer.o
+                0xc0001c21                sys_date
+                0xc0001e59                timer_init
+                0xc0001eb1                mtime_sleep
+ *fill*         0xc0001eff        0x1 
+ .text          0xc0001f00      0x55b /home/steven/SKOS/src/build/kernel.o
+                0xc0001f00                intr_exit
+                0xc0002437                syscall_handler
+ *fill*         0xc000245b        0x5 
+ .text          0xc0002460      0x1b1 /home/steven/SKOS/src/build/print.o
+                0xc0002460                put_str
+                0xc000247e                put_char
+                0xc000254b                put_int
+                0xc00025ae                set_cursor
+                0xc00025d2                cls_screen
+ .text          0xc0002611       0xd7 /home/steven/SKOS/src/build/debug.o
+                0xc0002611                panic_spin
+ .text          0xc00026e8     0x11cb /home/steven/SKOS/src/build/memory.o
+                0xc00028df                mem_init
+                0xc0002bb4                get_a_page
+                0xc0002d12                get_a_page_without_opvaddrbitmap
+                0xc0002d9c                free_a_phy_page
+                0xc0002dfe                addr_v2p
+                0xc0002e2d                pfree
+                0xc0002f67                mfree_page
+                0xc0003123                pte_ptr
+                0xc0003153                pde_ptr
+                0xc000316f                malloc_page
+                0xc0003231                get_kernel_pages
+                0xc000328c                get_user_pages
+                0xc00032e1                block_desc_init
+                0xc000339b                sys_malloc
+                0xc00036cd                sys_free
+ .text          0xc00038b3      0x23a /home/steven/SKOS/src/build/bitmap.o
+                0xc00038b3                bitmap_init
+                0xc00038d6                bitmap_scan_test
+                0xc0003914                bitmap_scan
+                0xc0003a39                bitmap_set
+ .text          0xc0003aed      0x3a7 /home/steven/SKOS/src/build/string.o
+                0xc0003aed                memset
+                0xc0003b3f                memcpy
+                0xc0003b9f                memcmp
+                0xc0003c1c                strcpy
+                0xc0003c6f                strlen
+                0xc0003cb3                strcmp
+                0xc0003d20                strchr
+                0xc0003d75                strrchr
+                0xc0003dd0                strcat
+                0xc0003e36                strchrs
+ .text          0xc0003e94      0xbb4 /home/steven/SKOS/src/build/thread.o
+                0xc0003eac                running_thread
+                0xc0003f83                release_pid
+                0xc0003fd7                fork_pid
+                0xc0003fe4                thread_create
+                0xc000405b                init_thread
+                0xc000415d                thread_start
+                0xc00042b9                schedule
+                0xc0004405                thread_block
+                0xc0004468                thread_unblock
+                0xc0004527                thread_yield
+                0xc000484d                sys_ps
+                0xc0004893                thread_exit
+                0xc0004989                pid2thread
+                0xc00049c5                thread_init
+ .text          0xc0004a48      0x1f6 /home/steven/SKOS/src/build/list.o
+                0xc0004a48                list_init
+                0xc0004a76                list_insert_before
+                0xc0004abb                list_push
+                0xc0004ad9                list_append
+                0xc0004af7                list_remove
+                0xc0004b31                list_pop
+                0xc0004b53                elem_find
+                0xc0004b94                list_traversal
+                0xc0004bf1                list_len
+                0xc0004c25                list_empty
+ *fill*         0xc0004c3e        0x2 
+ .text          0xc0004c40       0x15 /home/steven/SKOS/src/build/switch_to.o
+                0xc0004c40                switch_to
+ .text          0xc0004c55      0x30a /home/steven/SKOS/src/build/sync.o
+                0xc0004c55                sema_init
+                0xc0004c7e                lock_init
+                0xc0004cae                sema_down
+                0xc0004da6                sema_up
+                0xc0004e52                lock_acquire
+                0xc0004ec7                lock_release
+ .text          0xc0004f5f       0xb6 /home/steven/SKOS/src/build/console.o
+                0xc0004f5f                console_init
+                0xc0004f78                console_acquire
+                0xc0004f91                console_release
+                0xc0004faa                console_put_str
+                0xc0004fcb                console_put_char
+                0xc0004ff4                console_put_int
+ .text          0xc0005015      0x2e2 /home/steven/SKOS/src/build/keyboard.o
+                0xc00052ac                keyboard_init
+ .text          0xc00052f7      0x32d /home/steven/SKOS/src/build/ioqueue.o
+                0xc00052f7                ioqueue_init
+                0xc0005352                ioq_full
+                0xc0005469                ioq_getchar
+                0xc000551e                ioq_putchar
+                0xc00055d7                ioq_length
+ .text          0xc0005624      0x183 /home/steven/SKOS/src/build/tss.o
+                0xc0005624                update_tss_esp
+                0xc000569d                tss_init
+ .text          0xc00057a7      0x369 /home/steven/SKOS/src/build/process.o
+                0xc00057a7                start_process
+                0xc00058ac                page_dir_activate
+                0xc00058e1                process_activate
+                0xc000592f                create_page_dir
+                0xc00059a7                create_user_vaddr_bitmap
+                0xc00059f1                process_execute
+ .text          0xc0005b10      0x356 /home/steven/SKOS/src/build/syscall.o
+                0xc0005b10                getpid
+                0xc0005b25                write
+                0xc0005b47                malloc
+                0xc0005b65                free
+                0xc0005b81                fork
+                0xc0005b96                read
+                0xc0005bb8                putchar
+                0xc0005bda                clear
+                0xc0005bed                getcwd
+                0xc0005c0e                open
+                0xc0005c35                close
+                0xc0005c53                lseek
+                0xc0005c7b                unlink
+                0xc0005c99                mkdir
+                0xc0005cb7                opendir
+                0xc0005cd5                closedir
+                0xc0005cf3                rmdir
+                0xc0005d11                readdir
+                0xc0005d2f                rewinddir
+                0xc0005d4b                stat
+                0xc0005d6c                chdir
+                0xc0005d8a                ps
+                0xc0005d9d                execv
+                0xc0005dbe                exit
+                0xc0005dda                wait
+                0xc0005df8                getchar
+                0xc0005e16                pipe
+                0xc0005e34                fd_redirect
+                0xc0005e53                date
+ .text          0xc0005e66      0x15c /home/steven/SKOS/src/build/syscall-init.o
+                0xc0005e66                sys_getpid
+                0xc0005e77                syscall_init
+ .text          0xc0005fc2      0x35d /home/steven/SKOS/src/build/stdio.o
+                0xc0006049                vsprintf
+                0xc00061b9                printf
+                0xc0006229                sprintf
+                0xc00062f5                get_char
+ .text          0xc000631f       0x5c /home/steven/SKOS/src/build/stdio-kernel.o
+                0xc000631f                printk
+ .text          0xc000637b      0xd84 /home/steven/SKOS/src/build/ide.o
+                0xc00066c9                ide_read
+                0xc0006844                ide_write
+                0xc00069bf                intr_hd_handler
+                0xc0006ed2                ide_init
+ .text          0xc00070ff     0x2198 /home/steven/SKOS/src/build/fs.o
+                0xc0007754                path_parse
+                0xc00077ac                path_depth_cnt
+                0xc0007aa9                sys_open
+                0xc0007d08                filesys_init
+                0xc0007f20                fd_local2global
+                0xc0007f6b                sys_close
+                0xc0008066                sys_write
+                0xc00081a7                sys_read
+                0xc00082dc                sys_Iseek
+                0xc00083cb                sys_unlink
+                0xc00085ed                sys_mkdir
+                0xc0008a05                sys_opendir
+                0xc0008b19                sys_closedir
+                0xc0008b46                sys_readdir
+                0xc0008b7e                sys_rewinddir
+                0xc0008b8e                sys_rmdir
+                0xc0008f12                sys_getcwd
+                0xc00090f0                sys_chdir
+                0xc0009182                sys_stat
+ .text          0xc0009297      0xe30 /home/steven/SKOS/src/build/dir.o
+                0xc0009297                open_root_dir
+                0xc00092c7                dir_open
+                0xc0009305                dir_close
+                0xc0009338                create_dir_entry
+                0xc00093a7                search_dir_entry
+                0xc000957b                sync_dir_entry
+                0xc00099a0                delete_dir_entry
+                0xc0009df6                dir_read
+                0xc0009fd3                dir_is_empty
+                0xc0009ffe                dir_remove
+ .text          0xc000a0c7     0x11fd /home/steven/SKOS/src/build/file.o
+                0xc000a0c7                get_free_slot_in_global
+                0xc000a11b                pcb_fd_install
+                0xc000a185                inode_bitmap_alloc
+                0xc000a1cc                block_bitmap_alloc
+                0xc000a21e                file_create
+                0xc000a51f                file_open
+                0xc000a638                file_close
+                0xc000a67b                bitmap_sync
+                0xc000a721                file_write
+                0xc000af09                file_read
+ .text          0xc000b2c4      0x70a /home/steven/SKOS/src/build/inode.o
+                0xc000b35e                inode_sync
+                0xc000b485                inode_open
+                0xc000b5cb                inode_close
+                0xc000b647                inode_init
+                0xc000b7ad                inode_release
+ .text          0xc000b9ce      0x549 /home/steven/SKOS/src/build/fork.o
+                0xc000bdf6                sys_fork
+ .text          0xc000bf17      0x826 /home/steven/SKOS/src/build/shell.o
+                0xc000bf17                print_prompt
+                0xc000c4d3                my_shell
+                0xc000c596                wish
+ .text          0xc000c73d       0x25 /home/steven/SKOS/src/build/assert.o
+                0xc000c73d                user_spin
+ .text          0xc000c762      0xbe4 /home/steven/SKOS/src/build/buildin_cmd.o
+                0xc000c8c4                make_clear_abs_path
+                0xc000c97a                make_default_path
+                0xc000ca0d                buildin_pwd
+                0xc000ca6a                buildin_cd
+                0xc000caf4                buildin_ps
+                0xc000cb19                buildin_clear
+                0xc000cb3e                buildin_mkdir
+                0xc000cbd0                buildin_rmdir
+                0xc000cc62                buildin_rm
+                0xc000ccf4                buildin_touch
+                0xc000cd8d                buildin_ls
+                0xc000d110                buildin_echo
+ .text          0xc000d346      0x35d /home/steven/SKOS/src/build/exec.o
+                0xc000d5dc                sys_execv
+ .text          0xc000d6a3      0x425 /home/steven/SKOS/src/build/wait_exit.o
+                0xc000d96b                sys_wait
+                0xc000da16                sys_exit
+ .text          0xc000dac8      0x260 /home/steven/SKOS/src/build/pipe.o
+                0xc000dac8                sys_fd_redirect
+                0xc000db11                is_pipe
+                0xc000db48                sys_pipe
+                0xc000dc17                pipe_read
+                0xc000dc9a                pipe_write
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+                0xc000e000                        . = ALIGN (CONSTANT (MAXPAGESIZE))
+                0xc000e000                        . = SEGMENT_START ("rodata-segment", (ALIGN (CONSTANT (MAXPAGESIZE)) + (. & (CONSTANT (MAXPAGESIZE) - 0x1))))
+
+.rodata         0xc000e000     0x2dc9
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0xc000e000       0x8d /home/steven/SKOS/src/build/main.o
+ .rodata        0xc000e08d        0xa /home/steven/SKOS/src/build/init.o
+ *fill*         0xc000e097        0x1 
+ .rodata        0xc000e098      0x2cd /home/steven/SKOS/src/build/interrupt.o
+ *fill*         0xc000e365        0x3 
+ .rodata        0xc000e368       0xc4 /home/steven/SKOS/src/build/timer.o
+ .rodata        0xc000e42c       0x3f /home/steven/SKOS/src/build/debug.o
+ *fill*         0xc000e46b        0x1 
+ .rodata        0xc000e46c      0x3dd /home/steven/SKOS/src/build/memory.o
+ *fill*         0xc000e849        0x3 
+ .rodata        0xc000e84c       0x77 /home/steven/SKOS/src/build/bitmap.o
+ *fill*         0xc000e8c3        0x1 
+ .rodata        0xc000e8c4       0xdc /home/steven/SKOS/src/build/string.o
+ .rodata        0xc000e9a0      0x3bc /home/steven/SKOS/src/build/thread.o
+ .rodata        0xc000ed5c      0x149 /home/steven/SKOS/src/build/sync.o
+ .rodata        0xc000eea5       0x29 /home/steven/SKOS/src/build/keyboard.o
+ *fill*         0xc000eece        0x2 
+ .rodata        0xc000eed0       0xc0 /home/steven/SKOS/src/build/ioqueue.o
+ .rodata        0xc000ef90       0x27 /home/steven/SKOS/src/build/tss.o
+ *fill*         0xc000efb7        0x1 
+ .rodata        0xc000efb8       0xfc /home/steven/SKOS/src/build/process.o
+ .rodata        0xc000f0b4       0x27 /home/steven/SKOS/src/build/syscall-init.o
+ *fill*         0xc000f0db        0x1 
+ .rodata        0xc000f0dc      0x211 /home/steven/SKOS/src/build/ide.o
+ *fill*         0xc000f2ed        0x3 
+ .rodata        0xc000f2f0      0x8ee /home/steven/SKOS/src/build/fs.o
+ *fill*         0xc000fbde        0x2 
+ .rodata        0xc000fbe0      0x207 /home/steven/SKOS/src/build/dir.o
+ *fill*         0xc000fde7        0x1 
+ .rodata        0xc000fde8      0x4ea /home/steven/SKOS/src/build/file.o
+ *fill*         0xc00102d2        0x2 
+ .rodata        0xc00102d4       0xde /home/steven/SKOS/src/build/inode.o
+ *fill*         0xc00103b2        0x2 
+ .rodata        0xc00103b4      0x15d /home/steven/SKOS/src/build/fork.o
+ *fill*         0xc0010511        0x3 
+ .rodata        0xc0010514      0x388 /home/steven/SKOS/src/build/shell.o
+ .rodata        0xc001089c       0x32 /home/steven/SKOS/src/build/assert.o
+ *fill*         0xc00108ce        0x2 
+ .rodata        0xc00108d0      0x446 /home/steven/SKOS/src/build/buildin_cmd.o
+ *fill*         0xc0010d16        0x2 
+ .rodata        0xc0010d18       0x52 /home/steven/SKOS/src/build/exec.o
+ *fill*         0xc0010d6a        0x2 
+ .rodata        0xc0010d6c       0x5d /home/steven/SKOS/src/build/wait_exit.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0xc0010dcc     0x2388
+ *(.eh_frame)
+ .eh_frame      0xc0010dcc       0x64 /home/steven/SKOS/src/build/main.o
+ .eh_frame      0xc0010e30       0x20 /home/steven/SKOS/src/build/init.o
+                                 0x38 (size before relaxing)
+ .eh_frame      0xc0010e50      0x180 /home/steven/SKOS/src/build/interrupt.o
+                                0x198 (size before relaxing)
+ .eh_frame      0xc0010fd0      0x140 /home/steven/SKOS/src/build/timer.o
+                                0x158 (size before relaxing)
+ .eh_frame      0xc0011110       0x1c /home/steven/SKOS/src/build/debug.o
+                                 0x34 (size before relaxing)
+ .eh_frame      0xc001112c      0x2e0 /home/steven/SKOS/src/build/memory.o
+                                0x2f8 (size before relaxing)
+ .eh_frame      0xc001140c       0x88 /home/steven/SKOS/src/build/bitmap.o
+                                 0xa0 (size before relaxing)
+ .eh_frame      0xc0011494      0x140 /home/steven/SKOS/src/build/string.o
+                                0x158 (size before relaxing)
+ .eh_frame      0xc00115d4      0x2c0 /home/steven/SKOS/src/build/thread.o
+                                0x2d8 (size before relaxing)
+ .eh_frame      0xc0011894      0x140 /home/steven/SKOS/src/build/list.o
+                                0x158 (size before relaxing)
+ .eh_frame      0xc00119d4       0xc8 /home/steven/SKOS/src/build/sync.o
+                                 0xe0 (size before relaxing)
+ .eh_frame      0xc0011a9c       0xc0 /home/steven/SKOS/src/build/console.o
+                                 0xd8 (size before relaxing)
+ .eh_frame      0xc0011b5c       0x60 /home/steven/SKOS/src/build/keyboard.o
+                                 0x78 (size before relaxing)
+ .eh_frame      0xc0011bbc      0x120 /home/steven/SKOS/src/build/ioqueue.o
+                                0x138 (size before relaxing)
+ .eh_frame      0xc0011cdc       0x64 /home/steven/SKOS/src/build/tss.o
+                                 0x7c (size before relaxing)
+ .eh_frame      0xc0011d40       0xc0 /home/steven/SKOS/src/build/process.o
+                                 0xd8 (size before relaxing)
+ .eh_frame      0xc0011e00      0x400 /home/steven/SKOS/src/build/syscall.o
+                                0x418 (size before relaxing)
+ .eh_frame      0xc0012200       0x40 /home/steven/SKOS/src/build/syscall-init.o
+                                 0x58 (size before relaxing)
+ .eh_frame      0xc0012240       0xc8 /home/steven/SKOS/src/build/stdio.o
+                                 0xe0 (size before relaxing)
+ .eh_frame      0xc0012308       0x24 /home/steven/SKOS/src/build/stdio-kernel.o
+                                 0x3c (size before relaxing)
+ .eh_frame      0xc001232c      0x254 /home/steven/SKOS/src/build/ide.o
+                                0x26c (size before relaxing)
+ .eh_frame      0xc0012580      0x32c /home/steven/SKOS/src/build/fs.o
+                                0x344 (size before relaxing)
+ .eh_frame      0xc00128ac      0x14c /home/steven/SKOS/src/build/dir.o
+                                0x164 (size before relaxing)
+ .eh_frame      0xc00129f8      0x140 /home/steven/SKOS/src/build/file.o
+                                0x158 (size before relaxing)
+ .eh_frame      0xc0012b38       0xe4 /home/steven/SKOS/src/build/inode.o
+                                 0xfc (size before relaxing)
+ .eh_frame      0xc0012c1c       0xc0 /home/steven/SKOS/src/build/fork.o
+                                 0xd8 (size before relaxing)
+ .eh_frame      0xc0012cdc       0xdc /home/steven/SKOS/src/build/shell.o
+                                 0xf4 (size before relaxing)
+ .eh_frame      0xc0012db8       0x1c /home/steven/SKOS/src/build/assert.o
+                                 0x34 (size before relaxing)
+ .eh_frame      0xc0012dd4      0x1bc /home/steven/SKOS/src/build/buildin_cmd.o
+                                0x1d4 (size before relaxing)
+ .eh_frame      0xc0012f90       0x60 /home/steven/SKOS/src/build/exec.o
+                                 0x78 (size before relaxing)
+ .eh_frame      0xc0012ff0       0xc0 /home/steven/SKOS/src/build/wait_exit.o
+                                 0xd8 (size before relaxing)
+ .eh_frame      0xc00130b0       0xa4 /home/steven/SKOS/src/build/pipe.o
+                                 0xbc (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0xc0014000                        . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0xc0014000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0xc0014000        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0xc0014000        0x0
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0xc0014000        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got            0xc0014000        0x0
+ *(.got)
+ .got           0xc0014000        0x0 /home/steven/SKOS/src/build/main.o
+ *(.igot)
+                0xc0014000                        . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
+
+.got.plt        0xc0014000        0x0
+ *(.got.plt)
+ .got.plt       0xc0014000        0x0 /home/steven/SKOS/src/build/main.o
+ *(.igot.plt)
+ .igot.plt      0xc0014000        0x0 /home/steven/SKOS/src/build/main.o
+
+.data           0xc0014000      0x156
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0xc0014000        0x0 /home/steven/SKOS/src/build/main.o
+ .data          0xc0014000        0x0 /home/steven/SKOS/src/build/init.o
+ .data          0xc0014000        0x0 /home/steven/SKOS/src/build/interrupt.o
+ .data          0xc0014000        0x0 /home/steven/SKOS/src/build/timer.o
+ .data          0xc0014000       0xc0 /home/steven/SKOS/src/build/kernel.o
+                0xc0014000                intr_entry_table
+ .data          0xc00140c0        0x8 /home/steven/SKOS/src/build/print.o
+ .data          0xc00140c8        0x0 /home/steven/SKOS/src/build/debug.o
+ .data          0xc00140c8        0x0 /home/steven/SKOS/src/build/memory.o
+ .data          0xc00140c8        0x0 /home/steven/SKOS/src/build/bitmap.o
+ .data          0xc00140c8        0x0 /home/steven/SKOS/src/build/string.o
+ .data          0xc00140c8        0x0 /home/steven/SKOS/src/build/thread.o
+ .data          0xc00140c8        0x0 /home/steven/SKOS/src/build/list.o
+ .data          0xc00140c8        0x0 /home/steven/SKOS/src/build/sync.o
+ .data          0xc00140c8        0x0 /home/steven/SKOS/src/build/console.o
+ *fill*         0xc00140c8       0x18 
+ .data          0xc00140e0       0x76 /home/steven/SKOS/src/build/keyboard.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/ioqueue.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/tss.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/process.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/syscall.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/syscall-init.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/stdio.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/stdio-kernel.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/ide.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/fs.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/dir.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/file.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/inode.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/fork.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/shell.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/assert.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/buildin_cmd.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/exec.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/wait_exit.o
+ .data          0xc0014156        0x0 /home/steven/SKOS/src/build/pipe.o
+
+.data1
+ *(.data1)
+                0xc0014156                        _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0xc0014156                        . = .
+                0xc0014156                        __bss_start = .
+
+.bss            0xc0014160     0x2020
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0xc0014160        0x0 /home/steven/SKOS/src/build/main.o
+ .bss           0xc0014160        0x0 /home/steven/SKOS/src/build/init.o
+ .bss           0xc0014160      0x848 /home/steven/SKOS/src/build/interrupt.o
+                0xc0014160                intr_name
+                0xc0014380                idt_table
+ .bss           0xc00149a8        0xa /home/steven/SKOS/src/build/timer.o
+                0xc00149a8                ticks
+                0xc00149ac                time
+ .bss           0xc00149b2        0x0 /home/steven/SKOS/src/build/debug.o
+ *fill*         0xc00149b2        0xe 
+ .bss           0xc00149c0      0x128 /home/steven/SKOS/src/build/memory.o
+                0xc00149c0                kernel_pool
+                0xc0014a00                user_pool
+                0xc0014a2c                kernel_vaddr
+                0xc0014a40                k_block_descs
+ .bss           0xc0014ae8        0x0 /home/steven/SKOS/src/build/bitmap.o
+ .bss           0xc0014ae8        0x0 /home/steven/SKOS/src/build/string.o
+ *fill*         0xc0014ae8       0x18 
+ .bss           0xc0014b00       0xd4 /home/steven/SKOS/src/build/thread.o
+                0xc0014b00                pid_bitmap_bits
+                0xc0014b80                pid_pool
+                0xc0014ba8                main_thread
+                0xc0014bac                idle_thread
+                0xc0014bb0                thread_ready_list
+                0xc0014bc0                thread_all_list
+ .bss           0xc0014bd4        0x0 /home/steven/SKOS/src/build/list.o
+ .bss           0xc0014bd4        0x0 /home/steven/SKOS/src/build/sync.o
+ .bss           0xc0014bd4       0x1c /home/steven/SKOS/src/build/console.o
+ *fill*         0xc0014bf0       0x10 
+ .bss           0xc0014c00       0x80 /home/steven/SKOS/src/build/keyboard.o
+                0xc0014c00                kbd_buf
+ .bss           0xc0014c80        0x0 /home/steven/SKOS/src/build/ioqueue.o
+ .bss           0xc0014c80       0x6c /home/steven/SKOS/src/build/tss.o
+ .bss           0xc0014cec        0x0 /home/steven/SKOS/src/build/process.o
+ .bss           0xc0014cec        0x0 /home/steven/SKOS/src/build/syscall.o
+ *fill*         0xc0014cec       0x14 
+ .bss           0xc0014d00       0x80 /home/steven/SKOS/src/build/syscall-init.o
+                0xc0014d00                syscall_table
+ .bss           0xc0014d80       0x40 /home/steven/SKOS/src/build/stdio.o
+                0xc0014d80                cmd_line
+ .bss           0xc0014dc0        0x0 /home/steven/SKOS/src/build/stdio-kernel.o
+ .bss           0xc0014dc0      0xce0 /home/steven/SKOS/src/build/ide.o
+                0xc0014dc0                ext_lba_base
+                0xc0014dc4                p_no
+                0xc0014dc5                l_no
+                0xc0014dc8                partition_list
+                0xc0014dd8                channel_cnt
+                0xc0014de0                channels
+ .bss           0xc0015aa0        0x4 /home/steven/SKOS/src/build/fs.o
+                0xc0015aa0                cur_part
+ *fill*         0xc0015aa4       0x1c 
+ .bss           0xc0015ac0      0x208 /home/steven/SKOS/src/build/dir.o
+                0xc0015ac0                root_dir
+ *fill*         0xc0015cc8       0x18 
+ .bss           0xc0015ce0      0x180 /home/steven/SKOS/src/build/file.o
+                0xc0015ce0                file_table
+ .bss           0xc0015e60        0x0 /home/steven/SKOS/src/build/inode.o
+ .bss           0xc0015e60        0x0 /home/steven/SKOS/src/build/fork.o
+ .bss           0xc0015e60      0x320 /home/steven/SKOS/src/build/shell.o
+                0xc0015e60                final_path
+                0xc0016060                cwd_cache
+                0xc00160a0                argc
+                0xc00160c0                argv
+ .bss           0xc0016180        0x0 /home/steven/SKOS/src/build/assert.o
+ .bss           0xc0016180        0x0 /home/steven/SKOS/src/build/buildin_cmd.o
+ .bss           0xc0016180        0x0 /home/steven/SKOS/src/build/exec.o
+ .bss           0xc0016180        0x0 /home/steven/SKOS/src/build/wait_exit.o
+ .bss           0xc0016180        0x0 /home/steven/SKOS/src/build/pipe.o
+ *(COMMON)
+                0xc0016180                        . = ALIGN ((. != 0x0)?0x4:0x1)
+                0xc0016180                        . = ALIGN (0x4)
+                0xc0016180                        . = SEGMENT_START ("ldata-segment", .)
+                0xc0016180                        . = ALIGN (0x4)
+                0xc0016180                        _end = .
+                [!provide]                        PROVIDE (end = .)
+                0xc0016180                        . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x1b
+ *(.comment)
+ .comment       0x00000000       0x1b /home/steven/SKOS/src/build/main.o
+                                 0x1c (size before relaxing)
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/init.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/interrupt.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/timer.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/debug.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/memory.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/bitmap.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/string.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/thread.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/list.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/sync.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/console.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/keyboard.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/ioqueue.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/tss.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/process.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/syscall.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/syscall-init.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/stdio.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/stdio-kernel.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/ide.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/fs.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/dir.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/file.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/inode.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/fork.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/shell.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/assert.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/buildin_cmd.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/exec.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/wait_exit.o
+ .comment       0x0000001b       0x1c /home/steven/SKOS/src/build/pipe.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x460
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /home/steven/SKOS/src/build/main.o
+ .debug_aranges
+                0x00000020       0x20 /home/steven/SKOS/src/build/init.o
+ .debug_aranges
+                0x00000040       0x20 /home/steven/SKOS/src/build/interrupt.o
+ .debug_aranges
+                0x00000060       0x20 /home/steven/SKOS/src/build/timer.o
+ .debug_aranges
+                0x00000080       0x20 /home/steven/SKOS/src/build/kernel.o
+ .debug_aranges
+                0x000000a0       0x20 /home/steven/SKOS/src/build/print.o
+ .debug_aranges
+                0x000000c0       0x20 /home/steven/SKOS/src/build/debug.o
+ .debug_aranges
+                0x000000e0       0x20 /home/steven/SKOS/src/build/memory.o
+ .debug_aranges
+                0x00000100       0x20 /home/steven/SKOS/src/build/bitmap.o
+ .debug_aranges
+                0x00000120       0x20 /home/steven/SKOS/src/build/string.o
+ .debug_aranges
+                0x00000140       0x20 /home/steven/SKOS/src/build/thread.o
+ .debug_aranges
+                0x00000160       0x20 /home/steven/SKOS/src/build/list.o
+ .debug_aranges
+                0x00000180       0x20 /home/steven/SKOS/src/build/switch_to.o
+ .debug_aranges
+                0x000001a0       0x20 /home/steven/SKOS/src/build/sync.o
+ .debug_aranges
+                0x000001c0       0x20 /home/steven/SKOS/src/build/console.o
+ .debug_aranges
+                0x000001e0       0x20 /home/steven/SKOS/src/build/keyboard.o
+ .debug_aranges
+                0x00000200       0x20 /home/steven/SKOS/src/build/ioqueue.o
+ .debug_aranges
+                0x00000220       0x20 /home/steven/SKOS/src/build/tss.o
+ .debug_aranges
+                0x00000240       0x20 /home/steven/SKOS/src/build/process.o
+ .debug_aranges
+                0x00000260       0x20 /home/steven/SKOS/src/build/syscall.o
+ .debug_aranges
+                0x00000280       0x20 /home/steven/SKOS/src/build/syscall-init.o
+ .debug_aranges
+                0x000002a0       0x20 /home/steven/SKOS/src/build/stdio.o
+ .debug_aranges
+                0x000002c0       0x20 /home/steven/SKOS/src/build/stdio-kernel.o
+ .debug_aranges
+                0x000002e0       0x20 /home/steven/SKOS/src/build/ide.o
+ .debug_aranges
+                0x00000300       0x20 /home/steven/SKOS/src/build/fs.o
+ .debug_aranges
+                0x00000320       0x20 /home/steven/SKOS/src/build/dir.o
+ .debug_aranges
+                0x00000340       0x20 /home/steven/SKOS/src/build/file.o
+ .debug_aranges
+                0x00000360       0x20 /home/steven/SKOS/src/build/inode.o
+ .debug_aranges
+                0x00000380       0x20 /home/steven/SKOS/src/build/fork.o
+ .debug_aranges
+                0x000003a0       0x20 /home/steven/SKOS/src/build/shell.o
+ .debug_aranges
+                0x000003c0       0x20 /home/steven/SKOS/src/build/assert.o
+ .debug_aranges
+                0x000003e0       0x20 /home/steven/SKOS/src/build/buildin_cmd.o
+ .debug_aranges
+                0x00000400       0x20 /home/steven/SKOS/src/build/exec.o
+ .debug_aranges
+                0x00000420       0x20 /home/steven/SKOS/src/build/wait_exit.o
+ .debug_aranges
+                0x00000440       0x20 /home/steven/SKOS/src/build/pipe.o
+
+.debug_pubnames
+                0x00000000        0x0
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000        0x0 /home/steven/SKOS/src/build/kernel.o
+ .debug_pubnames
+                0x00000000        0x0 /home/steven/SKOS/src/build/print.o
+ .debug_pubnames
+                0x00000000        0x0 /home/steven/SKOS/src/build/switch_to.o
+
+.debug_info     0x00000000     0xf9d1
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x415 /home/steven/SKOS/src/build/main.o
+ .debug_info    0x00000415      0x101 /home/steven/SKOS/src/build/init.o
+ .debug_info    0x00000516      0x3e7 /home/steven/SKOS/src/build/interrupt.o
+ .debug_info    0x000008fd      0x633 /home/steven/SKOS/src/build/timer.o
+ .debug_info    0x00000f30       0x75 /home/steven/SKOS/src/build/kernel.o
+ .debug_info    0x00000fa5       0x6e /home/steven/SKOS/src/build/print.o
+ .debug_info    0x00001013      0x11b /home/steven/SKOS/src/build/debug.o
+ .debug_info    0x0000112e      0xffb /home/steven/SKOS/src/build/memory.o
+ .debug_info    0x00002129      0x2b5 /home/steven/SKOS/src/build/bitmap.o
+ .debug_info    0x000023de      0x443 /home/steven/SKOS/src/build/string.o
+ .debug_info    0x00002821      0xda5 /home/steven/SKOS/src/build/thread.o
+ .debug_info    0x000035c6      0x376 /home/steven/SKOS/src/build/list.o
+ .debug_info    0x0000393c       0x78 /home/steven/SKOS/src/build/switch_to.o
+ .debug_info    0x000039b4      0x5e2 /home/steven/SKOS/src/build/sync.o
+ .debug_info    0x00003f96      0x45c /home/steven/SKOS/src/build/console.o
+ .debug_info    0x000043f2      0x5bc /home/steven/SKOS/src/build/keyboard.o
+ .debug_info    0x000049ae      0x69e /home/steven/SKOS/src/build/ioqueue.o
+ .debug_info    0x0000504c      0x5d5 /home/steven/SKOS/src/build/tss.o
+ .debug_info    0x00005621      0x763 /home/steven/SKOS/src/build/process.o
+ .debug_info    0x00005d84      0x94a /home/steven/SKOS/src/build/syscall.o
+ .debug_info    0x000066ce      0x6ff /home/steven/SKOS/src/build/syscall-init.o
+ .debug_info    0x00006dcd      0x36d /home/steven/SKOS/src/build/stdio.o
+ .debug_info    0x0000713a      0x112 /home/steven/SKOS/src/build/stdio-kernel.o
+ .debug_info    0x0000724c      0xee0 /home/steven/SKOS/src/build/ide.o
+ .debug_info    0x0000812c     0x1bcf /home/steven/SKOS/src/build/fs.o
+ .debug_info    0x00009cfb      0xe99 /home/steven/SKOS/src/build/dir.o
+ .debug_info    0x0000ab94      0xf78 /home/steven/SKOS/src/build/file.o
+ .debug_info    0x0000bb0c      0xba5 /home/steven/SKOS/src/build/inode.o
+ .debug_info    0x0000c6b1      0x906 /home/steven/SKOS/src/build/fork.o
+ .debug_info    0x0000cfb7      0x6f8 /home/steven/SKOS/src/build/shell.o
+ .debug_info    0x0000d6af       0xdf /home/steven/SKOS/src/build/assert.o
+ .debug_info    0x0000d78e      0x9a3 /home/steven/SKOS/src/build/buildin_cmd.o
+ .debug_info    0x0000e131      0x96f /home/steven/SKOS/src/build/exec.o
+ .debug_info    0x0000eaa0      0x7f7 /home/steven/SKOS/src/build/wait_exit.o
+ .debug_info    0x0000f297      0x73a /home/steven/SKOS/src/build/pipe.o
+
+.debug_abbrev   0x00000000     0x3bbc
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x191 /home/steven/SKOS/src/build/main.o
+ .debug_abbrev  0x00000191       0xaf /home/steven/SKOS/src/build/init.o
+ .debug_abbrev  0x00000240      0x20d /home/steven/SKOS/src/build/interrupt.o
+ .debug_abbrev  0x0000044d      0x218 /home/steven/SKOS/src/build/timer.o
+ .debug_abbrev  0x00000665       0x1d /home/steven/SKOS/src/build/kernel.o
+ .debug_abbrev  0x00000682       0x1d /home/steven/SKOS/src/build/print.o
+ .debug_abbrev  0x0000069f       0xc8 /home/steven/SKOS/src/build/debug.o
+ .debug_abbrev  0x00000767      0x31e /home/steven/SKOS/src/build/memory.o
+ .debug_abbrev  0x00000a85      0x154 /home/steven/SKOS/src/build/bitmap.o
+ .debug_abbrev  0x00000bd9      0x12c /home/steven/SKOS/src/build/string.o
+ .debug_abbrev  0x00000d05      0x3c0 /home/steven/SKOS/src/build/thread.o
+ .debug_abbrev  0x000010c5      0x16c /home/steven/SKOS/src/build/list.o
+ .debug_abbrev  0x00001231       0x1d /home/steven/SKOS/src/build/switch_to.o
+ .debug_abbrev  0x0000124e      0x18d /home/steven/SKOS/src/build/sync.o
+ .debug_abbrev  0x000013db      0x153 /home/steven/SKOS/src/build/console.o
+ .debug_abbrev  0x0000152e      0x195 /home/steven/SKOS/src/build/keyboard.o
+ .debug_abbrev  0x000016c3      0x21a /home/steven/SKOS/src/build/ioqueue.o
+ .debug_abbrev  0x000018dd      0x18e /home/steven/SKOS/src/build/tss.o
+ .debug_abbrev  0x00001a6b      0x1cb /home/steven/SKOS/src/build/process.o
+ .debug_abbrev  0x00001c36      0x15d /home/steven/SKOS/src/build/syscall.o
+ .debug_abbrev  0x00001d93      0x1ae /home/steven/SKOS/src/build/syscall-init.o
+ .debug_abbrev  0x00001f41      0x15b /home/steven/SKOS/src/build/stdio.o
+ .debug_abbrev  0x0000209c       0xe0 /home/steven/SKOS/src/build/stdio-kernel.o
+ .debug_abbrev  0x0000217c      0x2fd /home/steven/SKOS/src/build/ide.o
+ .debug_abbrev  0x00002479      0x2f2 /home/steven/SKOS/src/build/fs.o
+ .debug_abbrev  0x0000276b      0x27c /home/steven/SKOS/src/build/dir.o
+ .debug_abbrev  0x000029e7      0x280 /home/steven/SKOS/src/build/file.o
+ .debug_abbrev  0x00002c67      0x211 /home/steven/SKOS/src/build/inode.o
+ .debug_abbrev  0x00002e78      0x20a /home/steven/SKOS/src/build/fork.o
+ .debug_abbrev  0x00003082      0x26b /home/steven/SKOS/src/build/shell.o
+ .debug_abbrev  0x000032ed       0x99 /home/steven/SKOS/src/build/assert.o
+ .debug_abbrev  0x00003386      0x257 /home/steven/SKOS/src/build/buildin_cmd.o
+ .debug_abbrev  0x000035dd      0x20f /home/steven/SKOS/src/build/exec.o
+ .debug_abbrev  0x000037ec      0x20c /home/steven/SKOS/src/build/wait_exit.o
+ .debug_abbrev  0x000039f8      0x1c4 /home/steven/SKOS/src/build/pipe.o
+
+.debug_line     0x00000000     0x58d9
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0xd1 /home/steven/SKOS/src/build/main.o
+ .debug_line    0x000000d1       0xa7 /home/steven/SKOS/src/build/init.o
+ .debug_line    0x00000178      0x1b5 /home/steven/SKOS/src/build/interrupt.o
+ .debug_line    0x0000032d      0x213 /home/steven/SKOS/src/build/timer.o
+ .debug_line    0x00000540      0x36f /home/steven/SKOS/src/build/kernel.o
+ .debug_line    0x000008af       0xf7 /home/steven/SKOS/src/build/print.o
+ .debug_line    0x000009a6       0xa7 /home/steven/SKOS/src/build/debug.o
+ .debug_line    0x00000a4d      0x736 /home/steven/SKOS/src/build/memory.o
+ .debug_line    0x00001183      0x179 /home/steven/SKOS/src/build/bitmap.o
+ .debug_line    0x000012fc      0x29c /home/steven/SKOS/src/build/string.o
+ .debug_line    0x00001598      0x40c /home/steven/SKOS/src/build/thread.o
+ .debug_line    0x000019a4      0x14a /home/steven/SKOS/src/build/list.o
+ .debug_line    0x00001aee       0x62 /home/steven/SKOS/src/build/switch_to.o
+ .debug_line    0x00001b50      0x198 /home/steven/SKOS/src/build/sync.o
+ .debug_line    0x00001ce8       0xb1 /home/steven/SKOS/src/build/console.o
+ .debug_line    0x00001d99      0x1e9 /home/steven/SKOS/src/build/keyboard.o
+ .debug_line    0x00001f82      0x1b7 /home/steven/SKOS/src/build/ioqueue.o
+ .debug_line    0x00002139       0xe9 /home/steven/SKOS/src/build/tss.o
+ .debug_line    0x00002222      0x1b1 /home/steven/SKOS/src/build/process.o
+ .debug_line    0x000023d3      0x13c /home/steven/SKOS/src/build/syscall.o
+ .debug_line    0x0000250f      0x112 /home/steven/SKOS/src/build/syscall-init.o
+ .debug_line    0x00002621      0x1a5 /home/steven/SKOS/src/build/stdio.o
+ .debug_line    0x000027c6       0x6d /home/steven/SKOS/src/build/stdio-kernel.o
+ .debug_line    0x00002833      0x4f9 /home/steven/SKOS/src/build/ide.o
+ .debug_line    0x00002d2c      0xc14 /home/steven/SKOS/src/build/fs.o
+ .debug_line    0x00003940      0x594 /home/steven/SKOS/src/build/dir.o
+ .debug_line    0x00003ed4      0x6e2 /home/steven/SKOS/src/build/file.o
+ .debug_line    0x000045b6      0x2be /home/steven/SKOS/src/build/inode.o
+ .debug_line    0x00004874      0x258 /home/steven/SKOS/src/build/fork.o
+ .debug_line    0x00004acc      0x3c2 /home/steven/SKOS/src/build/shell.o
+ .debug_line    0x00004e8e       0x5a /home/steven/SKOS/src/build/assert.o
+ .debug_line    0x00004ee8      0x479 /home/steven/SKOS/src/build/buildin_cmd.o
+ .debug_line    0x00005361      0x1f8 /home/steven/SKOS/src/build/exec.o
+ .debug_line    0x00005559      0x21e /home/steven/SKOS/src/build/wait_exit.o
+ .debug_line    0x00005777      0x162 /home/steven/SKOS/src/build/pipe.o
+
+.debug_frame    0x00000000        0x0
+ *(.debug_frame)
+ .debug_frame   0x00000000        0x0 /home/steven/SKOS/src/build/kernel.o
+ .debug_frame   0x00000000        0x0 /home/steven/SKOS/src/build/print.o
+ .debug_frame   0x00000000        0x0 /home/steven/SKOS/src/build/switch_to.o
+
+.debug_str      0x00000000     0x2543
+ *(.debug_str)
+ .debug_str     0x00000000      0x29f /home/steven/SKOS/src/build/main.o
+                                0x31f (size before relaxing)
+ .debug_str     0x0000029f       0x99 /home/steven/SKOS/src/build/init.o
+                                0x173 (size before relaxing)
+ .debug_str     0x00000338      0x19d /home/steven/SKOS/src/build/interrupt.o
+                                0x2db (size before relaxing)
+ .debug_str     0x000004d5      0x114 /home/steven/SKOS/src/build/timer.o
+                                0x422 (size before relaxing)
+ .debug_str     0x000005e9       0x13 /home/steven/SKOS/src/build/debug.o
+                                0x134 (size before relaxing)
+ .debug_str     0x000005fc      0x3db /home/steven/SKOS/src/build/memory.o
+                                0x783 (size before relaxing)
+ .debug_str     0x000009d7       0x45 /home/steven/SKOS/src/build/bitmap.o
+                                0x1af (size before relaxing)
+ .debug_str     0x00000a1c       0x5c /home/steven/SKOS/src/build/string.o
+                                0x162 (size before relaxing)
+ .debug_str     0x00000a78      0x235 /home/steven/SKOS/src/build/thread.o
+                                0x6fd (size before relaxing)
+ .debug_str     0x00000cad       0x3e /home/steven/SKOS/src/build/list.o
+                                0x201 (size before relaxing)
+ .debug_str     0x00000ceb       0x37 /home/steven/SKOS/src/build/sync.o
+                                0x3e2 (size before relaxing)
+ .debug_str     0x00000d22       0x68 /home/steven/SKOS/src/build/console.o
+                                0x381 (size before relaxing)
+ .debug_str     0x00000d8a       0xf5 /home/steven/SKOS/src/build/keyboard.o
+                                0x41a (size before relaxing)
+ .debug_str     0x00000e7f       0x41 /home/steven/SKOS/src/build/ioqueue.o
+                                0x3e1 (size before relaxing)
+ .debug_str     0x00000ec0       0xd2 /home/steven/SKOS/src/build/tss.o
+                                0x3c3 (size before relaxing)
+ .debug_str     0x00000f92       0xda /home/steven/SKOS/src/build/process.o
+                                0x4ff (size before relaxing)
+ .debug_str     0x0000106c      0x1bf /home/steven/SKOS/src/build/syscall.o
+                                0x3a8 (size before relaxing)
+ .debug_str     0x0000122b       0xfe /home/steven/SKOS/src/build/syscall-init.o
+                                0x5a1 (size before relaxing)
+ .debug_str     0x00001329       0x67 /home/steven/SKOS/src/build/stdio.o
+                                0x1c5 (size before relaxing)
+ .debug_str     0x00001390      0x106 /home/steven/SKOS/src/build/stdio-kernel.o
+ .debug_str     0x00001390      0x2bd /home/steven/SKOS/src/build/ide.o
+                                0x6c1 (size before relaxing)
+ .debug_str     0x0000164d      0x62d /home/steven/SKOS/src/build/fs.o
+                                0xd12 (size before relaxing)
+ .debug_str     0x00001c7a       0xd9 /home/steven/SKOS/src/build/dir.o
+                                0x7da (size before relaxing)
+ .debug_str     0x00001d53      0x15d /home/steven/SKOS/src/build/file.o
+                                0x8ff (size before relaxing)
+ .debug_str     0x00001eb0       0xb4 /home/steven/SKOS/src/build/inode.o
+                                0x6e0 (size before relaxing)
+ .debug_str     0x00001f64      0x13d /home/steven/SKOS/src/build/fork.o
+                                0x5e8 (size before relaxing)
+ .debug_str     0x000020a1      0x117 /home/steven/SKOS/src/build/shell.o
+                                0x348 (size before relaxing)
+ .debug_str     0x000021b8      0x100 /home/steven/SKOS/src/build/assert.o
+ .debug_str     0x000021b8       0x80 /home/steven/SKOS/src/build/buildin_cmd.o
+                                0x415 (size before relaxing)
+ .debug_str     0x00002238      0x1e1 /home/steven/SKOS/src/build/exec.o
+                                0x60a (size before relaxing)
+ .debug_str     0x00002419       0xf0 /home/steven/SKOS/src/build/wait_exit.o
+                                0x547 (size before relaxing)
+ .debug_str     0x00002509       0x3a /home/steven/SKOS/src/build/pipe.o
+                                0x49c (size before relaxing)
+
+.debug_loc      0x00000000        0x0
+ *(.debug_loc)
+ .debug_loc     0x00000000        0x0 /home/steven/SKOS/src/build/kernel.o
+ .debug_loc     0x00000000        0x0 /home/steven/SKOS/src/build/print.o
+ .debug_loc     0x00000000        0x0 /home/steven/SKOS/src/build/switch_to.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x00000000      0x6e5
+ *(.debug_line_str)
+ .debug_line_str
+                0x00000000      0x100 /home/steven/SKOS/src/build/main.o
+                                0x12b (size before relaxing)
+ .debug_line_str
+                0x00000100       0xd4 /home/steven/SKOS/src/build/init.o
+                                0x162 (size before relaxing)
+ .debug_line_str
+                0x000001d4       0x29 /home/steven/SKOS/src/build/interrupt.o
+                                 0xc6 (size before relaxing)
+ .debug_line_str
+                0x000001fd       0x3c /home/steven/SKOS/src/build/timer.o
+                                0x135 (size before relaxing)
+ .debug_line_str
+                0x00000239       0x25 /home/steven/SKOS/src/build/debug.o
+                                 0xb5 (size before relaxing)
+ .debug_line_str
+                0x0000025e       0x36 /home/steven/SKOS/src/build/memory.o
+                                0x10f (size before relaxing)
+ .debug_line_str
+                0x00000294       0x23 /home/steven/SKOS/src/build/bitmap.o
+                                 0xbb (size before relaxing)
+ .debug_line_str
+                0x000002b7       0x23 /home/steven/SKOS/src/build/string.o
+                                 0x8d (size before relaxing)
+ .debug_line_str
+                0x000002da       0x37 /home/steven/SKOS/src/build/thread.o
+                                0x15d (size before relaxing)
+ .debug_line_str
+                0x00000311       0x21 /home/steven/SKOS/src/build/list.o
+                                 0xae (size before relaxing)
+ .debug_line_str
+                0x00000332       0x24 /home/steven/SKOS/src/build/sync.o
+                                 0xf8 (size before relaxing)
+ .debug_line_str
+                0x00000356       0x27 /home/steven/SKOS/src/build/console.o
+                                0x112 (size before relaxing)
+ .debug_line_str
+                0x0000037d       0x32 /home/steven/SKOS/src/build/keyboard.o
+                                0x130 (size before relaxing)
+ .debug_line_str
+                0x000003af       0x27 /home/steven/SKOS/src/build/ioqueue.o
+                                0x128 (size before relaxing)
+ .debug_line_str
+                0x000003d6       0x2e /home/steven/SKOS/src/build/tss.o
+                                0x115 (size before relaxing)
+ .debug_line_str
+                0x00000404       0x29 /home/steven/SKOS/src/build/process.o
+                                0x149 (size before relaxing)
+ .debug_line_str
+                0x0000042d       0x24 /home/steven/SKOS/src/build/syscall.o
+                                 0xaf (size before relaxing)
+ .debug_line_str
+                0x00000451       0x4f /home/steven/SKOS/src/build/syscall-init.o
+                                0x1ba (size before relaxing)
+ .debug_line_str
+                0x000004a0       0x22 /home/steven/SKOS/src/build/stdio.o
+                                 0xbc (size before relaxing)
+ .debug_line_str
+                0x000004c2       0x4d /home/steven/SKOS/src/build/stdio-kernel.o
+                                 0xcc (size before relaxing)
+ .debug_line_str
+                0x0000050f       0x23 /home/steven/SKOS/src/build/ide.o
+                                0x145 (size before relaxing)
+ .debug_line_str
+                0x00000532       0x3a /home/steven/SKOS/src/build/fs.o
+                                0x195 (size before relaxing)
+ .debug_line_str
+                0x0000056c       0x1f /home/steven/SKOS/src/build/dir.o
+                                0x161 (size before relaxing)
+ .debug_line_str
+                0x0000058b       0x20 /home/steven/SKOS/src/build/file.o
+                                0x170 (size before relaxing)
+ .debug_line_str
+                0x000005ab       0x21 /home/steven/SKOS/src/build/inode.o
+                                0x15e (size before relaxing)
+ .debug_line_str
+                0x000005cc       0x26 /home/steven/SKOS/src/build/fork.o
+                                0x170 (size before relaxing)
+ .debug_line_str
+                0x000005f2       0x32 /home/steven/SKOS/src/build/shell.o
+                                0x11b (size before relaxing)
+ .debug_line_str
+                0x00000624       0x23 /home/steven/SKOS/src/build/assert.o
+                                 0x8c (size before relaxing)
+ .debug_line_str
+                0x00000647       0x2a /home/steven/SKOS/src/build/buildin_cmd.o
+                                0x108 (size before relaxing)
+ .debug_line_str
+                0x00000671       0x26 /home/steven/SKOS/src/build/exec.o
+                                0x134 (size before relaxing)
+ .debug_line_str
+                0x00000697       0x2b /home/steven/SKOS/src/build/wait_exit.o
+                                0x165 (size before relaxing)
+ .debug_line_str
+                0x000006c2       0x23 /home/steven/SKOS/src/build/pipe.o
+                                0x153 (size before relaxing)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x00000000       0x55
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x00000000       0x22 /home/steven/SKOS/src/build/keyboard.o
+ .debug_rnglists
+                0x00000022       0x1c /home/steven/SKOS/src/build/dir.o
+ .debug_rnglists
+                0x0000003e       0x17 /home/steven/SKOS/src/build/shell.o
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/home/steven/SKOS/src/build/kernel.bin elf32-i386)
