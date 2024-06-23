@@ -56,10 +56,13 @@ void *get_a_page(enum pool_flags pf, uint32_t vaddr);
 void *get_user_pages(uint32_t pg_cnt);
 void block_desc_init(struct mem_block_desc *desc_array);
 void *sys_malloc(uint32_t size);
-void pfree(uint32_t pg_phy_addr);
 void sys_free(void *ptr);
 void mfree_page(enum pool_flags pf, void *_vaddr, uint32_t pg_cnt);
 void *get_a_page_without_opvaddrbitmap(enum pool_flags pf, uint32_t vaddr);
 void free_a_phy_page(uint32_t pg_phy_addr);
 
+void full_childProcess_pageTable(void *child_thread, void *parent_thread, uint32_t vaddress);
+void do_wp_page(uint32_t error_code, uint32_t address);
+void do_no_page(uint32_t error_code, uint32_t address);
+void Debugmem(); // 调试时候用
 #endif

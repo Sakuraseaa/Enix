@@ -16,6 +16,7 @@
                                            : "=g"(EFLAG_VAR))
 
 extern uint32_t syscall_handler(void);
+extern void page_fault(void);
 
 /*中断门描述符结构体*/
 struct gate_desc
@@ -97,6 +98,7 @@ static void idt_desc_init(void)
    /* 单独处理系统调用,系统调用对应的中断门dpl为3, 内核段选择子
     * 中断处理程序为单独的syscall_handler,*/
    make_idt_desc(&idt[lastindex], IDT_DESC_ATTR_DPL3, syscall_handler);
+   make_idt_desc(&idt[14], IDT_DESC_ATTR_DPL3, page_fault);
    put_str("   idt_desc_init done\n");
 }
 

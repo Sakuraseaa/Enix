@@ -128,3 +128,37 @@ syscall_handler:
    mov [esp + 8*4], eax	
    jmp intr_exit		    ; intr_exit返回,恢复上下文
 
+[bits 32]
+extern do_no_page, do_wp_page
+section .text
+global page_fault
+
+page_fault:
+
+; 以下是保存上下文环境
+  
+   push ds
+   push es
+   push fs
+   push gs
+   pushad			 
+   
+   xchg eax, [esp + 12 * 4] ;得到页中断压入的出错码
+   mov edx, cr2
+
+   push 14 ;压入中断号，保持格式
+
+   push edx
+   push eax  ;压入错误码和错误的虚拟地址
+
+   test eax, 1 ; 按位与两个操作数(不会修改两个操作数)，如果 结果是0，ZF=1, 否则 ZF = 0
+   jne a
+   call do_no_page ; 页表项P位 = 0,调用缺页中断
+   jmp b
+a: call do_wp_page ; 否则，调用写保护中断
+
+b: add esp, 8 ;这里只回收虚拟地址的栈, 中断
+
+   jmp intr_exit
+
+

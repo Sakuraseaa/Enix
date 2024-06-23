@@ -106,6 +106,43 @@ static void copy_body_stack3(task_status_t *child_thread, task_status_t *parent_
 }
 
 /**
+ * @brief 复制页表和页表项
+ *
+ * @param child_thread
+ * @param parent_thread
+ * @return int
+ */
+static void copy_page_tables(task_status_t *child_thread, task_status_t *parent_thread)
+{
+    uint8_t *vaddr_btmp = parent_thread->userprog_vaddr.vaddr_bitmap.bits;               // 父进程位图地址
+    uint32_t btmp_bytes_len = parent_thread->userprog_vaddr.vaddr_bitmap.btmp_bytes_len; // 父进程位图长度
+
+    uint32_t vaddr_start = parent_thread->userprog_vaddr.vaddr_start; // 父进程起始虚拟地址
+    uint32_t idx_byte = 0;                                            // 字节
+    uint32_t idx_bit = 0;                                             // 位
+    uint32_t prog_vaddr = 0;
+
+    while (idx_byte < btmp_bytes_len) // 逐字节遍历位图
+    {
+        if (vaddr_btmp[idx_byte]) // 如果字节有内容
+        {
+
+            idx_bit = 0;
+            while (idx_bit < 8) // 遍历位
+            {
+                if (vaddr_btmp[idx_byte] & (BITMAP_MASK << idx_bit)) // 确定该位有内容
+                {
+                    prog_vaddr = vaddr_start + (idx_byte * 8 + idx_bit) * PG_SIZE;
+                    full_childProcess_pageTable(child_thread, parent_thread, prog_vaddr);
+                }
+                idx_bit++;
+            }
+        }
+        idx_byte++;
+    }
+}
+
+/**
  * @brief 为子进程构建thread_stack. 之所以要构建thread_stack是因为该函数作为fork系统调用一部分
  *        必然是用户调用系统调用, 则一定是发生了0x80软中断. 所以在返回的时候必然是经过intr_exit的
  *        用thread_stack来实现着一步, 设置子进程从中断退出所需要的资源
@@ -171,9 +208,9 @@ static void update_inode_open_cnts(task_status_t *pcb)
 static int32_t copy_process(task_status_t *child_thread, task_status_t *parent_thread)
 {
     // a.分配内核缓存页
-    void *buf_page = get_kernel_pages(1);
-    if (buf_page == NULL)
-        return -1;
+    // void *buf_page = get_kernel_pages(1);
+    // if (buf_page == NULL)
+    //     return -1;
 
     // b. 复制父进程的pcb（4kb大小）, 虚拟地址位图，内核栈给子进程
     if (copy_pcb_vaddrbitmap_stack0(child_thread, parent_thread) == 1)
@@ -186,7 +223,8 @@ static int32_t copy_process(task_status_t *child_thread, task_status_t *parent_t
 
     // d.复制父进程的所有数据给子进程，实质是复制父进程的页表的每一张物理页（代码体， 用户栈， 堆等）？
     // 填充到子进程页表。
-    copy_body_stack3(child_thread, parent_thread, buf_page);
+    // copy_body_stack3(child_thread, parent_thread, buf_page);
+    copy_page_tables(child_thread, parent_thread);
 
     // e. 构建子进程的thread_stack 并且设置子进程返回值为0，这一步的目的是让子进程被调度后，从中断退出恢复(fork时的环境)
     // 因为fork()是内核提供的，在0x80号中断，是系统调用
@@ -195,7 +233,7 @@ static int32_t copy_process(task_status_t *child_thread, task_status_t *parent_t
     // f.更新文件计数
     update_inode_open_cnts(child_thread);
 
-    mfree_page(PF_KERNEL, buf_page, 1);
+    //  mfree_page(PF_KERNEL, buf_page, 1);
     return 0;
 }
 

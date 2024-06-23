@@ -34,7 +34,8 @@ enum SYSCALL_NR
    SYS_PIPE,
    SYS_FD_REDIRECT,
    SYS_HELP,
-   SYS_DATE
+   SYS_DATE,
+   SYS_DEBUG
 };
 uint32_t getpid(void);
 uint32_t write(int32_t fd, const void *buf, uint32_t count);
@@ -65,4 +66,5 @@ int32_t getchar(char *buf);
 int32_t pipe(int32_t pipe_fd[2]);
 void fd_redirect(uint32_t old_local_fd, uint32_t new_local_fd);
 void date(void);
+void debug(void);
 #endif

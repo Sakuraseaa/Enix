@@ -5,6 +5,11 @@
 #include "string.h"
 #include "sync.h"
 #include "interrupt.h"
+#include "process.h"
+
+// 调试使用的头文件，不用的时候可以删除掉
+#include "stdio-kernel.h"
+
 // memory是系统的内存管理模块，因此需要先规划系统的物理内存
 
 // 内核运行时需要1G的物理内存，剩下3G物理内存是用户程序，由于有内存分页，因此物理内存中不必连续，虚拟内存中连续即可
@@ -80,6 +85,10 @@ virtual_addr_t kernel_vaddr;   /// 用于管理内核虚拟地址
 
 /// 内核不同大小内存单元的售货窗口
 mem_block_desc_t k_block_descs[DESC_CNT];
+
+#define mem_idx(addr) ((addr - 0x200000) / PG_SIZE)
+#define Physical_Page 7800
+uint8_t mem[7800] = {0}; // 哈希表，描述物理页被引用的情况
 
 /**
  * @brief mem_pool_init用于初始化内存池
@@ -243,26 +252,29 @@ static void *palloc(pool_t *m_pool)
    int bit_idx = bitmap_scan(&m_pool->pool_bitmap, 1);
    if (bit_idx == -1)
       return NULL;
+
    bitmap_set(&m_pool->pool_bitmap, bit_idx, 1);
    uint32_t page_phyaddr = ((bit_idx * PG_SIZE) + m_pool->phy_addr_start);
+   mem[mem_idx(page_phyaddr)] = 1;
+
    return (void *)page_phyaddr;
 }
 
 /**
  * @brief page_table_add用于在页表中添加虚拟地址所属的虚拟页与物理地址所属的物理页的映射。
- *        注意，给出虚拟地址和物理地址即可，会自动计算需要映射的虚拟页和物理页会被
+ *        页表项是不存在的
  *
  * @param _vaddr 被映射的虚拟地址
  * @param _page_phyaddr 要映射到的物理地址
+ * @param pte_flag 页表项内后三位的标志
  *
  */
-static void page_table_add(void *_vaddr, void *_page_phyaddr)
+static void page_table_add(void *_vaddr, void *_page_phyaddr, uint8_t pte_flag)
 {
    uint32_t vaddr = (uint32_t)_vaddr;
    uint32_t page_phyaddr = (uint32_t)_page_phyaddr;
 
    // 获取页表地址和页地址，这两个包含在pde和pte中
-   // Attention 等下手动查一下页表
    uint32_t *pt_addr = pde_ptr(vaddr);
    uint32_t *p_addr = pte_ptr(vaddr);
 
@@ -270,9 +282,9 @@ static void page_table_add(void *_vaddr, void *_page_phyaddr)
    // 首先确定虚拟地址的*pt_addr存在
    if (*pt_addr & 0x00000001)
    {
-      ASSERT(!(*p_addr & 0x00000001)); // 确保当前pte没有被使用，即
+      ASSERT(!(*p_addr & 0x00000001)); // 确保当前pte没有被使
       if (!(*p_addr & 0x00000001))
-         *p_addr = (page_phyaddr | PG_US_U | PG_RW_W | PG_P_1);
+         *p_addr = (page_phyaddr | (pte_flag & 0x07));
       else
       {
          PANIC("pte repeat");
@@ -286,8 +298,36 @@ static void page_table_add(void *_vaddr, void *_page_phyaddr)
       // 页表中的数据要清0，避免原有的数据被误认为是页表项
       memset((void *)((int)p_addr & 0xFFFFF000), 0, PG_SIZE);
       ASSERT(!(*p_addr & 0x00000001));
-      *p_addr = (page_phyaddr | PG_US_U | PG_RW_W | PG_P_1);
+      *p_addr = (page_phyaddr | (pte_flag & 0x07));
    }
+}
+
+/**
+ * @brief 修改页表项权限，需要确保页表项已经存在
+ *
+ * @param vaddr
+ * @param pte_flag
+ */
+static void Modify_PTE(uint32_t _vaddr, uint32_t _page_phyaddr, uint8_t pte_flag)
+{
+   uint32_t page_phyaddr = _page_phyaddr;
+   uint32_t vaddr = (_vaddr & 0xfffff000); // 对齐于4kb边界
+
+   // 获取页表地址和页地址，这两个包含在pde和pte中
+   uint32_t *pt_addr = pde_ptr(vaddr);
+   uint32_t *p_addr = pte_ptr(vaddr);
+
+   // 如果页表项或页目录不存在整个系统挂起
+   if (*pt_addr & 0x00000001)
+   {
+      ASSERT((*p_addr & 0x00000001));
+      if ((*p_addr & 0x00000001))
+         *p_addr = (page_phyaddr | (pte_flag & 0x07)); // 修改权限
+      else
+         PANIC("pte repeat");
+   }
+   else
+      ASSERT((*pt_addr & 0x00000001));
 }
 
 /**
@@ -328,7 +368,7 @@ void *get_a_page(pool_flags_t pf, uint32_t vaddr)
       return NULL;
 
    // 页表中添加虚拟页和物理页的映射
-   page_table_add((void *)vaddr, page_phyaddr);
+   page_table_add((void *)vaddr, page_phyaddr, PG_US_U | PG_RW_W | PG_P_1);
 
    // 释放锁
    lock_release(&mem_pool->mutex);
@@ -356,13 +396,17 @@ void *get_a_page_without_opvaddrbitmap(pool_flags_t pf, uint32_t vaddr)
       lock_release(&mem_pool->mutex);
       return NULL;
    }
-   page_table_add((void *)vaddr, page_phyaddr);
+   page_table_add((void *)vaddr, page_phyaddr, PG_US_U | PG_RW_W | PG_P_1);
    lock_release(&mem_pool->mutex);
    return (void *)vaddr;
 }
 
 /**
- * @brief free_a_phy_page用于将pg_phy_page执指向的物理页的位图清0
+ * @brief free_a_phy_page用于将pg_phy_page执指向的物理页的位图清0,该函数好像和pfree相同 ？
+ *
+ * @details 由于使用Bitmap的方式管理物理内存, 而Bitmap中一位表示4K大小的内存, 即一个页.
+ *          而回收本质上就是把对应页在bitmap中的占用位的清0即可. 这样做一方面减小了开销,
+ *          但是却造成了内存泄露的问题, 所以在用户申请一个页的时候, 需要memset清0
  *
  * @param pg_phy_page 需要在位图中清0的物理页地址
  */
@@ -370,6 +414,12 @@ void free_a_phy_page(uint32_t pg_phy_page)
 {
    pool_t *mem_pool;
    uint32_t bit_idx = 0;
+   if (mem[mem_idx(pg_phy_page)] > 1)
+   {
+      mem[mem_idx(pg_phy_page)]--;
+      return;
+   }
+   ASSERT(mem[mem_idx(pg_phy_page)] == 1);
    if (pg_phy_page >= user_pool.phy_addr_start)
    {
       mem_pool = &user_pool;
@@ -381,6 +431,7 @@ void free_a_phy_page(uint32_t pg_phy_page)
       bit_idx = (pg_phy_page - kernel_pool.phy_addr_start) / PG_SIZE;
    }
    bitmap_set(&mem_pool->pool_bitmap, bit_idx, 0);
+   mem[mem_idx(pg_phy_page)] = 0;
 }
 
 /**
@@ -394,32 +445,6 @@ uint32_t addr_v2p(uint32_t vaddr)
    uint32_t *page_addr = pte_ptr(vaddr);
    // 去掉页表项低12位的页表项属性，而后拼接虚拟地址的低12位页内偏移得到物理地址
    return ((*page_addr & 0xFFFFF000) + (vaddr & 0x00000FFF));
-}
-
-/**
- * @brief pfree(Physical Free)用于将给定的物理地址所属于的页回收到物理内存池
- *
- * @details 由于使用Bitmap的方式管理物理内存, 而Bitmap中一位表示4K大小的内存, 即一个页.
- *          而回收本质上就是把对应页在bitmap中的占用位的清0即可. 这样做一方面减小了开销,
- *          但是却造成了内存泄露的问题, 所以在用户申请一个页的时候, 需要memset清0
- *
- * @param pg_phy_addr
- */
-void pfree(uint32_t pg_phy_addr)
-{
-   pool_t *mem_pool;
-   uint32_t bit_idx = 0;
-   if (user_pool.phy_addr_start <= pg_phy_addr)
-   {
-      mem_pool = &user_pool;
-      bit_idx = (pg_phy_addr - user_pool.phy_addr_start) / PG_SIZE;
-   }
-   else
-   {
-      mem_pool = &kernel_pool;
-      bit_idx = (pg_phy_addr - kernel_pool.phy_addr_start) / PG_SIZE;
-   }
-   bitmap_set(&mem_pool->pool_bitmap, bit_idx, 0);
 }
 
 /**
@@ -505,7 +530,7 @@ void mfree_page(pool_flags_t pf, void *_vaddr, uint32_t pg_cnt)
          ASSERT((pg_phy_addr % PG_SIZE == 0) && user_pool.phy_addr_start <= pg_phy_addr);
 
          // 先释放物理页
-         pfree(pg_phy_addr);
+         free_a_phy_page(pg_phy_addr);
          // 稍后统一释放虚拟页
 
          // 清除虚拟页和物理页的映射
@@ -523,7 +548,7 @@ void mfree_page(pool_flags_t pf, void *_vaddr, uint32_t pg_cnt)
          ASSERT((pg_phy_addr % PG_SIZE == 0) && kernel_pool.phy_addr_start <= pg_phy_addr && pg_phy_addr < user_pool.phy_addr_start)
 
          // 先释放物理页
-         pfree(pg_phy_addr);
+         free_a_phy_page(pg_phy_addr);
          // 稍后统一释放虚拟页
 
          // 清除虚拟页和物理页的映射
@@ -597,7 +622,7 @@ void *malloc_page(pool_flags_t pf, uint32_t pg_cnt)
       if (page_phyaddr == NULL)
          return NULL;
       // 建立虚拟页地址与物理地址的映射
-      page_table_add((void *)vaddr, page_phyaddr);
+      page_table_add((void *)vaddr, page_phyaddr, PG_US_U | PG_RW_W | PG_P_1);
       // 下一个虚拟页
       vaddr += PG_SIZE;
    }
@@ -877,4 +902,70 @@ void sys_free(void *ptr)
       }
       lock_release(&mem_pool->mutex);
    }
+}
+
+/**
+ * @brief 写保护页面处理
+ *    配合fork()
+ * @param error_code interrupt number
+ * @param address The addresss that caused the exception
+ */
+void do_wp_page(uint32_t error_code, uint32_t address)
+{
+
+   uint32_t pvaddr = addr_v2p(address & 0xfffff000);
+
+   if (mem[mem_idx(pvaddr)] == 1)
+   { // 物理页独享 - 修改页面权限返回，
+      Modify_PTE(address, pvaddr, PG_US_U | PG_RW_W | PG_P_1);
+      return;
+   }
+
+   // 分配新页面给进程，在进程用的时候给进程分配页面,给子进程分配新的页面
+   void *buf_page = get_kernel_pages(1);
+   void *new_page = palloc(&kernel_pool);
+   memcpy(buf_page, (void *)(address & 0xfffff000), PG_SIZE);
+   Modify_PTE(address, (uint32_t)new_page, PG_US_U | PG_RW_W | PG_P_1);
+   memcpy((void *)(address & 0xfffff000), buf_page, PG_SIZE);
+
+   mem[mem_idx(pvaddr)]--; // 原物理页共享数减一
+
+   mfree_page(PF_KERNEL, buf_page, 1);
+}
+
+/**
+ * @brief 缺页处理
+ *配合exec
+ * @param error_code interrupt number
+ * @param address The address that cause the exception
+ */
+void do_no_page(uint32_t error_code, uint32_t address)
+{
+}
+
+/**
+ * @brief 供fork()使用，填充子进程页表项，修改父进程页表项权限
+ *
+ * @param address 需要填充的虚拟地址
+ */
+void full_childProcess_pageTable(void *child_thread, void *parent_thread, uint32_t vaddress)
+{
+   uint32_t pvaddr = addr_v2p(vaddress);
+   Modify_PTE(vaddress, pvaddr, PG_US_U | PG_P_1);
+
+   // 使用子进程的页目录, 此后操作的就是子进程的虚拟内存
+   page_dir_activate((struct task_struct *)child_thread);
+   page_table_add((void *)vaddress, (void *)pvaddr, PG_US_U | PG_P_1);
+   page_dir_activate((struct task_struct *)parent_thread); // 切换成父亲进程页表
+
+   mem[mem_idx(pvaddr)]++;
+}
+
+void Debugmem()
+{
+   for (int i = 0; i < Physical_Page; i++)
+      if (mem[i])
+      {
+         printk("%x:%d ", (i * PG_SIZE) + 0x200000, mem[i]);
+      }
 }

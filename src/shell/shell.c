@@ -9,7 +9,6 @@
 #include "string.h"
 #include "buildin_cmd.h"
 #include "assert.h"
-
 #define cmd_len 128   // 最大支持键入128个字符的命令行输入
 #define MAX_ARG_NR 16 // 加上命令名外,最多支持15个参数
 
@@ -171,6 +170,10 @@ static void cmd_execute(uint32_t argc, char **argv)
         buildin_echo(argc, argv);
     else if (!strcmp("date", argv[0]))
         date();
+    else if (!strcmp("debug", argv[0]))
+    {
+        debug();
+    }
     else
     { // 如果是外部命令,需要从磁盘上加载
         int32_t pid = fork();
@@ -295,3 +298,4 @@ void wish()
         close(fd[1]);
     }
 }
+

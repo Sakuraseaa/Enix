@@ -56,5 +56,6 @@ void syscall_init(void)
    syscall_table[SYS_GETCHAR] = get_char;
    syscall_table[SYS_FD_REDIRECT] = sys_fd_redirect;
    syscall_table[SYS_DATE] = sys_date; // 有bug
+   syscall_table[SYS_DEBUG] = Debugmem;
    put_str("syscall_init done\n");
 }

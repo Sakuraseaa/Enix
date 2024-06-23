@@ -206,3 +206,9 @@ void date(void)
 {
    _syscall0(SYS_DATE);
 }
+
+// 得到当前的时间
+void debug(void)
+{
+   _syscall0(SYS_DEBUG);
+}

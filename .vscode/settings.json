@@ -7,6 +7,7 @@
         "debug.h": "c",
         "interrupt.h": "c",
         "thread.h": "c",
-        "wait_exit.h": "c"
+        "wait_exit.h": "c",
+        "print.h": "c"
     }
 }
